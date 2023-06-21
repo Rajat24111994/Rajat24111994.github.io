@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio |Rajat Mohan</title>
+    <title>Portfolio | Rajat Mohan</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/solid.css">  
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
-
 <body>
-    <!-- navbar -->
-    <div id="nav-menu">
-        <div class="topnav" id="mytopnav">
-
-            <a href="#home"> <img id="logo" src="./Images/LOGO PORTFOLIO.jpg" alt=""></a>
-            <a href="#home" class="nav-link home" class="active">HOME</a>
-            <a href="#about" class="nav-link about">ABOUT</a>
-            <a href="#skills" class="nav-link skills">SKILLS</a>
-            <a href="#projects" class="nav-link projects">PROJECTS</a>
-            <a href="#contact" class="nav-link contact">CONTACT</a>
-
-            <button id="resume-button-1" onclick="resume()">
-                <a id="resume-link-1" class="nav-link resume" href="./RAJAT_MOHAN_Resume_19-04-2023-22-55-19 (2).pdf"
-                    download="RAJAT_MOHAN_Resume_19-04-2023-22-55-19" target="_blank">RESUME</a>
-            </button>
-
-            <a href="javascript:void(0);" class="icon" onclick="myfunction()"> ☰ </a>
+    
+        <header id="nav_color nav">
+        <div class="header-left nav-menu">
+            <div class="logo nav_link">
+                <a href="#"><h2 id="logo">RAJAT Mohan</h2></a>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="nav_link active-link nav-link home">
+                            <i class="uil uil-estate nav_icon"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav_link nav-link skills">
+                            <i class="uil uil-file-alt nav_icon"></i>Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav_link nav-link about">
+                            <i class="uil uil-file-alt nav_icon"></i>About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav_link nav-link projects">
+                            <i class="uil uil-briefcase-alt nav_icon"></i>Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav_link nav-link contact">
+                            <i class="uil uil-message nav_icon"></i>Contact Me
+                        </a>
+                    </li>
+                   <li id="resume-button-1" class="nav_link">
+                        <a class="nav-link resume" id="resume-link-1" href="./RAJAT_MOHAN_Resume_19-04-2023-22-55-19 (2).pdf"
+                            download="Alok_Rai_Resume">Resume</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+        <div class="header-right">
+            <div class="light body">
+
+                <input type="checkbox" id="toggle">
+
+                <label class="toggle" for="toggle">
+                    <i class="bx bxs-sun"></i>
+                    <i class="bx bx-moon"></i>
+                    <span class="ball"></span>
+                </label>
+
+                <!-- JS File -->
+                <script type="text/javascript" src="colorscript.js"></script>
+
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
 
     <!-- homepage -->
     <div id="abo">
@@ -50,66 +100,27 @@
                         target="_blank">Resume</a></button>
             </div>
             <div>
-                <img class="home-img" width="80%" src="./rajat photo.jpg" alt="">
+                <img class="home-img" width="80%" src="./Images/home.jpg" alt="">
             </div>
         </section>
-
-
+        
         <!-- About -->
 
         <section id="about" class="about section">
             <h2>About Me</h2>
-
             <div id="ab">
                 <p id="user-detail-intro">
+                  
                 <h3 id="c">
                     Hi !
-                    I am a Backend Java developer with a passion for creating robust, efficient, and scalable
-                    applications. I have 2100+ hours Coading experience working with teams, developing complex software
-                    solutions  and i solved 350+ DSA Problebem also from diffrent diffrent plateform.
-                    
-                    <br>
-
-                    My expertise lies in designing and developing RESTful APIs, implementing database structures and
-                    query performance. I have a strong understanding of software development principles, object-oriented
-                    programming concepts, and design patterns.
-
-                    <br>
-                    <br>
-
-                    I am comfortable working with multiple technologies such as Spring Framework (spring-boot),ORM
-                    (Hibernate), SpringDataJPA, MySQL, HTML, CSS and JavaScript also . I am always eager to learn new technologies
-                    and methodologies to improve my skills and stay up-to-date with the latest trends in the industry.
-
-                    <br>
-                    <br>
-                    
-
-                    My approach to development is to prioritize clean and maintainable code, which ensures that the
-                    software I develop is easy to understand, modify and extend over time. I strive to deliver
-                    high-quality solutions that meet the needs of both the business and end-users.
-
-                    <br>
-                    <br>
-                    
-
-                    I enjoy collaborating with others and believe that communication and teamwork are key factors in
-                    building successful software applications. I am always open to feedback and suggestions from my team
-                    members and take pride in my ability to contribute positively to the team dynamic.
-
-                    <br>
-                    <br>
-                    
-
-                    Thank you for taking the time to read about me. I look forward to discussing my experiences and
-                    exploring new opportunities.
-                </h3>
+                 
+                    As a Java backend developer at Aspirent, I have honed my skills in developing robust and scalable applications. With a deep understanding of Java, Spring framework,MySQL,HTML,CSS and JavaScript , I have successfully delivered high-quality solutions. I take pride in my ability to solve complex problems, optimize performance, and contribute to the success of projects through my strong coding practices and commitment to continuous learning.
+                  </h3>
                 </p>
             </div>
-
-
         </section>
-        <div>
+        <br>
+        <br>
 
         <h2 id="heading">Skills </h2>
 
@@ -136,11 +147,6 @@
                 <h4 class="skills-card-name"></h4>MySql
             </div>
 
-            <div class="skills-card" id="leaf"><img width="100px" class="skills-card-img" src="./Images/MAVEN.jpg"
-                    alt="maven">
-                <h4 class="skills-card-name"></h4>MAVEN
-            </div>
-
             <div class="skills-card" id="leafr"><img width="100px" class="skills-card-img" src="./Images/HIBERNATE.png"
                     alt="hibernate">
                 <h4 class="skills-card-name"></h4>HIBERNET
@@ -148,7 +154,7 @@
 
             <div class="skills-card" id="leaf"><img width="100px" class="skills-card-img" src="./Images/Spring.jpg"
                     alt="spring">
-                <h4 class="skills-card-name"></h4>SPRING
+                <h4 class="skills-card-name"></h4>SPRING FRAMEWORK
             </div>
             <div class="skills-card" id="leafr"><img width="100px" class="skills-card-img"
                     src="./Images/spring-boot.png " alt="spring-boot">
@@ -156,89 +162,110 @@
             </div>
 
             <div class="skills-card" id="leafr"><img width="100px" class="skills-card-img"
-                    src="./Images/springdatajpa.png" alt="spring-boot">
-                <h4 class="skills-card-name"></h4>SPRING DATA JPA
-            </div>
-
-            <div class="skills-card" id="leafr"><img width="100px" class="skills-card-img"
                     src="./Images/Spring Security.png" alt="spring-boot">
                 <h4 class="skills-card-name"></h4>SPRING SECURITY
             </div>
         </section>
-        </div>
-
         <!-- <section id="projects" >projects -->
         <h2 id="heading">PROJECTS</h2>
-
         <div id="projects">
             <div class="project-card" id="leafp">
-                <img width="70%" id="pimg" src="./Images/Capture.PNG" alt="Capture">
+                <img width="70%" id="pimg" src="./Images/Capture.PNG" alt="rodanfields-img">
                 <h5 id="tit" style=color:greenyellow>TITLE</h5>
-                <h3 class="project-title">Flower</h3>
+                <h3 class="project-title">flower.com </h3>
                 <h5 id="tit" style=color:greenyellow>PROJECT DESCRIPTION</h5>
-                <p class="project-description"> Platform Provide Medicated Beauty Products</p>
+                <p class="project-description"> Flower.com is an exquisite online ecommerce website that caters to the floral needs of individuals and businesses alike.</p>
                 <h5 id="tit" style=color:greenyellow>TECH-STACK</h5>
                 <p class="project-tech-stack">HTML, CSS, JavaScript</p>
-                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/casual-metal-9545"> <i
+                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/flower.com"> <i
                         class="devicon-github-original-wordmark "></i>
                 </a>
                 <a id="tit" class="project-deployed-link" href="https://genuine-malabi-a05086.netlify.app/"><i
                         class='bx bx-right-top-arrow-circle'></i></a>
 
             </div>
+            <div class="project-card" id="leafpr">
+                <img width="70%" id="pimgr" src="./Images/Screenshot (79).png" alt="E-mart">
+                <h5 id="tit" style=color:greenyellow>TITLE</h5>
+                <h3 class="project-title">changeable-food</h3>
+                <h5 id="tit" style=color:greenyellow>PROJECT DESCRIPTION</h5>
+                <p class="project-description"> Changable Food is an innovative and dynamic e-commerce website that caters to the ever-evolving culinary preferences of food enthusiasts.</p>
+                <h5 id="tit" style=color:greenyellow>TECH-STACK</h5>
+                <p class="project-tech-stack">HTML, CSS, JavaScript</p>
+                <a id="tit" class="project-github-link" href="hhttps://github.com/Rajat24111994/-changeable-food-3405"> <i
+                        class="devicon-github-original-wordmark "></i>
+                </a>
+                <a id="tit" class="project-deployed-link" href="https://starlit-klepon-2d3f83.netlify.app/"><i
+                        class='bx bx-right-top-arrow-circle'></i></a>
+            </div>
+
             <div class="project-card" id="leafp">
-                <img width="70%" id="pimg" src="./Images/Capture.PNG" alt="Capture">
+                <img width="70%" id="pimg" src="./Images/student-management-system-2.jpg" alt="StudentRagistrationSystem">
                 <h5 id="tit" style=color:greenyellow>TITLE</h5>
-                <h3 class="project-title">Flower</h3>
+                <h3 class="project-title">Student Registration System</h3>
                 <h5 id="tit" style=color:greenyellow>PROJECT DESCRIPTION</h5>
-                <p class="project-description"> Platform Provide Medicated Beauty Products</p>
+                <p class="project-description">In an Educational Institute, every year technology training is conducted during the summer and winter seasons. Students are enrolled in different courses under different technology tracks like- Android, Java, JEE, PHP, Oracle, etc.</p>
                 <h5 id="tit" style=color:greenyellow>TECH-STACK</h5>
-                <p class="project-tech-stack">HTML, CSS, JavaScript</p>
-                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/casual-metal-9545"> <i
+                <p class="project-tech-stack">Java</p>
+                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/Student-Registration-System"> <i
                         class="devicon-github-original-wordmark "></i>
                 </a>
-                <a id="tit" class="project-deployed-link" href="https://genuine-malabi-a05086.netlify.app/"><i
+                <a id="tit" class="project-deployed-link" href="./Images/student-management-system-2.jpg"><i
                         class='bx bx-right-top-arrow-circle'></i></a>
-
             </div>
-             <div class="project-card" id="leafp">
-                <img width="70%" id="pimg" src="./Images/Capture.PNG" alt="Capture">
+            <div class="project-card" id="leafpr">
+                <img width="70%" id="pimgr" src="./Images/shutterstock_1680091963_(8)-2.webp" alt="image">
                 <h5 id="tit" style=color:greenyellow>TITLE</h5>
-                <h3 class="project-title">Flower</h3>
+                <h3 class="project-title">Covid-19 Vaccination</h3>
                 <h5 id="tit" style=color:greenyellow>PROJECT DESCRIPTION</h5>
-                <p class="project-description"> Platform Provide Medicated Beauty Products</p>
+                <p class="project-description">This application aims to make the process of getting vaccinated against COVID-19 more accessible and convenient for citizens. Through the online registration and scheduling feature, individuals can choose their preferred vaccination centers and schedule their appointments with ease.</p>
                 <h5 id="tit" style=color:greenyellow>TECH-STACK</h5>
-                <p class="project-tech-stack">HTML, CSS, JavaScript</p>
-                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/casual-metal-9545"> <i
+                <p class="project-tech-stack">JAVA useing spring-boot</p>
+                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/Covid-19-Vaccination-Application"> <i
                         class="devicon-github-original-wordmark "></i>
                 </a>
-                <a id="tit" class="project-deployed-link" href="https://genuine-malabi-a05086.netlify.app/"><i
+                <a id="tit" class="project-deployed-link" href="./Images/shutterstock_1680091963_(8)-2.webp"><i
                         class='bx bx-right-top-arrow-circle'></i></a>
-
             </div>
-             <div class="project-card" id="leafp">
-                <img width="70%" id="pimg" src="./Images/Capture.PNG" alt="Capture">
-                <h5 id="tit" style=color:greenyellow>TITLE</h5>
-                <h3 class="project-title">Flower</h3>
-                <h5 id="tit" style=color:greenyellow>PROJECT DESCRIPTION</h5>
-                <p class="project-description"> Platform Provide Medicated Beauty Products</p>
-                <h5 id="tit" style=color:greenyellow>TECH-STACK</h5>
-                <p class="project-tech-stack">HTML, CSS, JavaScript</p>
-                <a id="tit" class="project-github-link" href="https://github.com/Rajat24111994/casual-metal-9545"> <i
-                        class="devicon-github-original-wordmark "></i>
-                </a>
-                <a id="tit" class="project-deployed-link" href="https://genuine-malabi-a05086.netlify.app/"><i
-                        class='bx bx-right-top-arrow-circle'></i></a>
-
-            </div>
-           
-
-            
         </div>
         <!-- </section> -->
 
 
-      
+        <div id="git-stats">
+            <h2 id="heading">GitHub Stats</h2>
+            <div class="git_statics">
+                <div class="git-stat-div react-activity-calendar">
+                    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+                    <link rel="stylesheet"
+                        href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+
+
+                    <div style="background-color: white; padding: 10px; border-radius: 9px; width: 100%;height: 100%;"
+                        class="calendar react-activity-calenda">
+                        Loading the data just for you.
+                    </div>
+                </div>
+
+                <div id="gitst">
+
+                    <img width="36%" id="github-streak-stats"
+                        src="https://github-readme-streak-stats.herokuapp.com?user=Rajat24111994&theme=radical" alt="">
+
+                    <img width="15%" id="github-top-langs"
+                        src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rajat24111994&&theme=radical"
+                        alt="">
+
+                    <img width="34%" id="github-stats-card"
+                        src="https://github-readme-stats.vercel.app/api?username=Rajat24111994&show_icons=true&theme=radical"
+                        alt="">
+                    <br>
+
+
+                </div>
+
+            </div>
+        </div>
 
         <div id="contact">
             <h2 id="heading">Contact me</h2>
@@ -246,7 +273,7 @@
                 <form action="" class="msgs">
                     <input id="form-email" placeholder="Enter email address" type="email">
                     <textarea name="form-message" id="form-message" placeholder="Enter message..."></textarea>
-                    <input id="form-submit" type="submit" value="Send Message">
+                    <input onclick="sub()" id="form-submit" type="submit" value="Send Message">
                 </form>
             </div>
             <div id="contact-socials">
@@ -289,35 +316,4 @@
 </body>
 
 </html>
-<script>
-
-function myfunction(){
-    document.getElementById("mytopnav").classList.toggle("responsive");
-    
-  }
-  //navbar sticky
-  window.onscroll = function() {myFunction()};
-  
-  var mytopnav = document.getElementById("mytopnav");
-  
-  var sticky = mytopnav.offsetTop;
-  
-  function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    mytopnav.classList.add("sticky")
-  } else {
-    mytopnav.classList.remove("sticky");
-  }
-  }
-  
-//   GitHubCalendar(".calendar", "Rajat24111994");
-//   // or enable responsive functionality
-//   GitHubCalendar(".calendar", "Rajat24111994", { responsive: true });
-
-
-
-  
-  function resume(){
-  window.open("https://drive.google.com/file/d/1dqrZwZVdgsglZYSeyfu-T3p79mbIhj2y/view?usp=drive_link", "_blank");
-  }
-</script>
+<script src="./script.js"></script>
