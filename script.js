@@ -14,7 +14,7 @@ function myfunction(){
   // or enable responsive functionality
   GitHubCalendar(".calendar", "Rajat24111994", { responsive: true });
   function resume(){
-  window.open("https://drive.google.com/file/d/1opUM57d_nAP79bhtp4pt9JmgjPraEWan/view?usp=sharing", "_blank");
+  window.open("https://drive.google.com/file/d/1dxFKB-ldWLtZiCgG26oEWYul-6c5jM6r/view?usp=drive_link", "_blank");
   }
   
   
