@@ -1,7 +1,7 @@
 
-GitHubCalendar(".calendar", "ritikrana0169");
+GitHubCalendar(".calendar", "rajat24111994");
 
-GitHubCalendar(".calendar", "ritikrana0169", { responsive: true })
+GitHubCalendar(".calendar", "rajat24111994", { responsive: true })
 
 
 
